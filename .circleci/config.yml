@@ -22,7 +22,7 @@ jobs:
   hello-build:
     executor:
       name: default
-      tag: 4
+      tag: "4"
     steps:
       - say-hello:
         to: "Circle"
