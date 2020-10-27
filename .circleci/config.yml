@@ -23,7 +23,9 @@ executors:
           
 jobs:
   hello-build:
-    executor: default
+    executor:
+      name: default
+      tag: "4"
     steps:
       - say-hello
 
