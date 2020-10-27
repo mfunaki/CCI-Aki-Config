@@ -16,7 +16,7 @@ executors:
         default: latest
         type: string
     docker:
-      - image: bash: << parameters.tag >>
+      - image: bash:<< parameters.tag >>
 
 jobs:
   hello-build:
