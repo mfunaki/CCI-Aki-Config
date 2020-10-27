@@ -27,7 +27,10 @@ jobs:
       name: default
       tag: "4"
     steps:
-      - say-hello
+      - say-hello:
+         to: "Circle"
+      - say-hello:
+         to: "CI"
 
 workflows:
   workflow:
