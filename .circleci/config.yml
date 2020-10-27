@@ -30,7 +30,6 @@ jobs:
         to: "CI"
 
 workflows:
-  version: 2.1
   workflow:
     jobs:
       - hello-build
