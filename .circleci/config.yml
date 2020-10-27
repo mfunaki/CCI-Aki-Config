@@ -23,6 +23,7 @@ jobs:
     executor: default
     steps:
       - say-hello
+      - say-hello
 
 workflows:
   version: 2.1
