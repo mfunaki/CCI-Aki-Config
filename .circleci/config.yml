@@ -22,9 +22,9 @@ jobs:
   hello-build:
     executor: default
     steps:
-      - say-hello
+      - say-hello:
         to: Circle
-      - say-hello
+      - say-hello:
         to: CI
 
 workflows:
