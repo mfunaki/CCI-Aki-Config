@@ -17,7 +17,7 @@ executors:
         type: string
     docker:
       - image: bash:<< parameters.tag >>
-       auth:
+        auth:
           username: mfunaki
           password: $DOCKERHUB_PASSWORD
 
