@@ -23,4 +23,9 @@ jobs:
     executor: default
     steps:
       - say-hello
-      
+
+workflows:
+  version: 2.1
+  workflow:
+    jobs:
+      - hello-build
