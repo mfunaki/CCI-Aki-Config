@@ -4,7 +4,7 @@ commands:
   say-hello:
     parameters:
       to:
-        default: ${CIRCLECI_USERNAME}
+        default: ${CIRCLE_USERNAME}
         type: string
     steps:
       - run: echo "Hello << parameters.to >>"
