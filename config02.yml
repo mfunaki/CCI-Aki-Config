@@ -17,6 +17,9 @@ executors:
         type: string
     docker:
       - image: bash:<< parameters.tag >>
+       auth:
+          username: mfunaki
+          password: $DOCKERHUB_PASSWORD
 
 jobs:
   hello-build:
