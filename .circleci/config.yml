@@ -20,8 +20,9 @@ executors:
 
 jobs:
   hello-build:
-    executor: default
-      tag: "4"
+    executor:
+      name: default
+      tag: 4
     steps:
       - say-hello:
         to: "Circle"
