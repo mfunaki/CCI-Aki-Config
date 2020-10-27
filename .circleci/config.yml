@@ -23,7 +23,9 @@ jobs:
     executor: default
     steps:
       - say-hello
+        to: Circle
       - say-hello
+        to: CI
 
 workflows:
   version: 2.1
