@@ -18,7 +18,7 @@ executors:
     docker:
       - image: bash:<< parameters.tag >>
         auth:
-          username: mfunaki
+          username: $DOCKERHUB_USERNAME
           password: $DOCKERHUB_PASSWORD
           
 jobs:
@@ -28,11 +28,12 @@ jobs:
       tag: "4"
     steps:
       - say-hello:
-         to: "Circle"
+        to: "Circle"
       - say-hello:
-         to: "CI"
+        to: "CI"
 
 workflows:
   workflow:
     jobs:
       - hello-build
+          context: docker
