@@ -27,13 +27,13 @@ jobs:
       name: default
       tag: "4"
     steps:
-      - say-hello:
+      say-hello:
         to: "Circle"
-      - say-hello:
+      say-hello:
         to: "CI"
 
 workflows:
   workflow:
     jobs:
-      - hello-build
+      - hello-build:
           context: docker
